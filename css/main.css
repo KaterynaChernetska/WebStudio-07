@@ -597,16 +597,6 @@ button {
   display: flex;
   width: calc((100% - 60px) / 3);
 }
-.card__grid a {
-  text-decoration: none;
-  transition-property: box-shadow, opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.card__grid:hover, .card__grid:focus {
-  opacity: 1;
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-}
 .card__title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -631,6 +621,19 @@ button {
 .card__box {
   position: relative;
   overflow: hidden;
+}
+
+.card__grid a {
+  text-decoration: none;
+  transition-property: box-shadow, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card__grid a:hover,
+.card__grid a:focus {
+  opacity: 1;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .card__text {
