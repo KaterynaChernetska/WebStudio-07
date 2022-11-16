@@ -9,7 +9,7 @@
       align-items: baseline;
     }
     
-     .footer-logo {
+    & .footer-logo {
       display: block;
       margin-bottom: 20px;
       color: var(--accent-color);
@@ -60,10 +60,11 @@
     background-color: var(--accent-color);
     fill: var(--primary-white-color);
   }
-    &-icon {
+  &-icon {
     fill: currentColor;
   }
   }
+
   .actual-address {
     color: var(--primary-white-color);
   
