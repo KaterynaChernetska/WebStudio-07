@@ -262,6 +262,10 @@ button {
   text-transform: uppercase;
 }
 
+.work {
+  padding-top: 0;
+}
+
 .principles__list {
   display: flex;
   gap: 30px;
