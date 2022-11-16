@@ -1,52 +1,58 @@
-.cards__grid {
+.card {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-  }
-  
-  .card__grid {
-    display: flex;
-    width: calc((100% - 60px) / 3);
-  }
-  .card__grid a {
-    text-decoration: none;
-    transition-property: box-shadow, opacity;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-      opacity: 1;
-      box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-        0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    &__grid {
+      display: flex;
+      width: calc((100% - 60px) / 3);
+    & a {
+      text-decoration: none;
+      transition-property: box-shadow, opacity;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-  }
-  
-  .card__title {
-    color: var(--title-text-color);
-  
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    margin-top: 0;
-    margin-bottom: 4px;
-  }
-  .card__type {
-    color: var(--primary-text-color);
-  
-    font-size: 16px;
-    line-height: 1.87;
-    margin: 0;
-  }
-  
-  .card__content {
+      &:hover,
+      &:focus {
+        opacity: 1;
+        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+          0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+      }
+    }
+    
+    &__title {
+      color: var(--title-text-color);
+    
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 2;
+      letter-spacing: 0.06em;
+      margin-top: 0;
+      margin-bottom: 4px;
+    }
+
+    &__type {
+      color: var(--primary-text-color);
+    
+      font-size: 16px;
+      line-height: 1.87;
+      margin: 0;
+    }
+    
+  &__content {
     padding: 20px 24px;
   
     border: 1px solid #eeeeee;
     border-top: none;
     background-color: var(--primary-white-color);
   }
+
+  &__box {
+    position: relative;
+    overflow: hidden;
+  }
+  }
+ 
   .card__text {
     margin: 0;
     padding: 63px 24px;
@@ -74,8 +80,5 @@
       transform: translateY(0);
     }
   }
-  .card__box {
-    position: relative;
-    overflow: hidden;
-  }
+
   
