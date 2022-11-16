@@ -815,7 +815,8 @@ button {
   border-radius: 2px;
   fill: transparent;
 }
-.icon-check:checked + .privacy-text span {
+
+.input-check:checked + .privacy-text span {
   background-color: var(--accent-color);
   outline: transparent;
 }

@@ -125,12 +125,13 @@
   border-radius: 2px;
   fill: transparent;
 
-  &:checked + .privacy-text span {
-    background-color: var(--accent-color);
-    outline: transparent;
-  }
 }
-
+.input-check {
+ &:checked + .privacy-text span {
+  background-color: var(--accent-color);
+  outline: transparent;
+}
+}
 .privacy-link {
   line-height: 1.7;
   letter-spacing: 0.03em;  
